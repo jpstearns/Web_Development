@@ -1,0 +1,4 @@
+#head{ border-bottom: 3px double black;}
+#left{ border-right: 3px double gray; float: left; width: 20%;}
+#right{ float: left; width: 75%;}
+#footer{ border-top: 3px double gray; text-align: center; clear: both;}

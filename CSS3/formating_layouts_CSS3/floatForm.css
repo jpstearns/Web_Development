@@ -1,0 +1,9 @@
+/*floatNoClear.css
+CSS file to go with float form
+demonstrates the use of float, width, margin*/
+
+fieldset{ background-color: #AAAAFF;}
+label{ clear: left; float: left; width: 5em; text-align: right; margin-right: .5em;}
+input{ background-color: #CCCCFF; float: left;}
+button{ float: left; clear: both; width: 10em; margin-left: 7em; margin-top: 1em; 
+		background-color: #0000CC; color: #FFFFFF;}

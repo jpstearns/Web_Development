@@ -1,0 +1,19 @@
+#menu li{list-style-type: none; 
+		width: 7em; 
+		text-align: center; 
+		margin-left: -2.5em;}
+		
+#menu a{text-decoration: none; 
+		color: black; 
+		display: block;
+		background-color: #EEEEFF; 
+		box-shadow: 5px 5px 5px gray; 
+		margin-bottom: 2px;
+		border-radius: 5px;}
+		
+#menu a:hover{background-color: #DDDDEE; 
+			box-shadow: 3px 3px 3px gray;
+			border: none}
+			
+/*One could easily float all the buttossn's left and create a horizontal list pg. 280 (Harris)
+a menu ul{margin-left: -2.5em;} would be necessary */

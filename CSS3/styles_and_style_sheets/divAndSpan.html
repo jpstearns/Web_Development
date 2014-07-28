@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- The following code illustrates how to use DIV and SPAN tags
+in this illustration we are setting up a list of phone numbers-->
+
+<html lang = "en-US">
+	<head>
+	<meta charset = "UTF-8">
+	<title>divSpan.html</title>
+		<style type = "text/css">
+			input[type="text"]{background-color:CCCCFF;}
+			h1,h2,h3{ text align: center;
+			font-family: cursive; 
+			background-color: green;}
+			h3{ font-family: monospace; background-color:pink; color: red;}
+			.contact{ background-color: #CCCCFF;}
+			.name{ font italic 110% arial, sans serif;}
+			.phone{ font: 100% monospace; }
+			#special p{ text-align: right;}
+			a{ color: black; background-color: white;}
+			a:visited{color: black; background-color: #FFFF##;}
+			a:hover{ color: white; background-color: black;}
+		</style>
+	</head>
+	<body>
+	<!--Defining Styles for Multiple Elements-->
+	<h1> Contact Information </h1>
+	<h3>D-Har</h3>
+		<div class = "contact">
+		<span class = "name">David</span>
+		<span class = "phone">401-423-3903</span>
+			<!-- example of selection by context-->
+			<div id = "special">
+			<P><a href = davidHarpool@gmail.com>David's Email</a></P>
+			</div>
+		</div>
+	<h3>J-steezy</h3>
+		<div class = "contact">
+		<span class = "name">Jared</span>
+		<span class = "phone">401-450-8878</span>
+			<div id = "special">
+			<P><a href = jared.patrick.stearns@gmail.com>Jared's Email</a></P>
+			</div>
+		</div>
+		<div class = "contact">
+	<h3>Arcane Apex</h3>
+		<span class = "name">Matt</span>
+		<span class = "number">914-714-4690</span>
+			<div id = "special">
+			<P><a href = matt.kiess@colorado.edu>Matt's Email</a></P>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- not selector, nth child selector needs to be reviewed. 
+	pg 189 of HTML5 textBook-->

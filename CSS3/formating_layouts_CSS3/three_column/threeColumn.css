@@ -1,0 +1,11 @@
+#head{border-bottom: 3px double gray; color: red; background-color: black; text-align: center;}
+#left{height: 40em; overflow: auto; background-color: yellow; float: left; width: 20%; padding-left:1%}
+#center{height: 40em; overflow: auto; background-color: green; float: left; width: 60%; padding-left: 1%;}
+#right{min-height: 40em; background-color: orange; float: left; width: 17%; padding-left: 1%}
+#footer{background-color: black; color: teal; border: 5px black solid; float: left; width: 100%; clear: both; text-align: center;}
+h2{color: HSL(180,75%,75%); background-color: black; text-align: center}
+
+
+/* min-height and height are both used here to format the page. The height and overflow combination
+brings up a scroll bar for the overflowing text. Min-height makes some decent columns but if the
+text begins to overflow one loses all control of the design of their page. */

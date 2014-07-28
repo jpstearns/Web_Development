@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--Andy Harris Notes on HTML5, CSS3, and Java Script-->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<!--myFirst.html--> 
+	<title>Jay's Corner</title>
+	<body background="trippy.jpg"></body>
+	<style type="text/css">
+	<!--http://colorschemedesigner.com is a useful tool-->
+		body {color: white; background-color: black;}
+		h1{color: pink; background-color: black;
+			font-family:"Trebuchet MS",Helvetica, 
+			FreeSans, sans-serif;}
+		h2{color: HSL(180,75%,75%); background-color: black;}
+		h3{color: HSL(180,75%,75%); background-color: black;}
+		h4{color: HSL(180,75%,75%); background-color: black;}
+		t{color: black; background-color: pink;}
+		#quote{font: bold italic 300% "Comice Sans MS", fantasy;
+			text-align: center; background-color: black; color: pink;} 
+		#attribution{ font: 80% monospace; text-align: right;}
+			
+	</style>
+</head>
+<body>
+	<center><h1>Universal Development Inc.</h1></center>
+	<center>	
+	</p>
+	<h2> We are a small privately owned Web Development company located in Providence Rhode Island </h2>
+	<!--Linking to and External Image
+		Plus Strong and Em Tags-->	
+		<strong><em><p>
+			<a href="universe.jpg">Hubble Ultra Deep Field Image</a>
+		</p><p>
+			<a href= "nietsche.html">Nietzsche Quote of the Day</a>
+		</p><p>
+			<a href="http://colorschemedesigner.com">Color Scheme Designer</a>
+		</p><p>
+			<a href = http://onlinefontconverter.com/>Online Font Converter</a>
+		</p><p>
+			<a href = http://www.pangloss.com/seidel/Shaker/index.html.>Shakespearean Insult Generator</a>
+		</p></em></strong>
+	<!--Inline Image-->
+	<h3>My Hero Albert Hoffman</h3>
+	<p>
+		<img src="hoffman.jpg"
+			height="480"
+			width="400"
+			alt="Albert Hoffman"/>
+	</p>
+	<p>
+		<em> Albert Hoffman </em> was the inventor of my favorite drug;
+		LSD.
+	</p>
+	<!--Example of Using Stackoverflow.com-->
+	<p>
+		The Present Moment:
+			<script language="javascript">
+				<!--
+				var today = new Date();
+				document.write(today);
+				//-->
+			</script>
+	</p>
+	<!-- this paragraph demonstrates how to style individual 
+		aspects of a page-->
+	<h2>How to tell Someone off the classy way:</h2>
+	<p id="quote">
+	[Thou] leathern-jerkin, crytal-button, knot-pated, agate-ring,
+	puke-stocking, caddis-garter, smooth-tongue, Spanish pouch!
+	</p>
+	<p id="attribution">
+	-William Shakespeare (Henry IV, Part I)
+	</p>
+	
+	<p>
+	<!-- Supscripts and SuperScripts-->
+	<h2>sOME uSEFUL mATH eQUATIONS</h2>
+	<p>A<sup>2</sup>+B<sup>2</sup>=C<sup>2</sup></p>
+	<p>i<sub>0</sub>=0</p>
+	<p>
+	<!--Unordered List-->
+		<h2>mY fAvorITE cardGames</h2>
+		<ul class='poker'>
+			<li><a id='search' href="http://google.com?q=poker">Texas Hold Em </a></li>
+			<li>Gin Rummy</li>
+			<li>Black Jack</li>
+			<li>Spades</li>
+			</ul>
+	</p>
+	<p>
+	<!--Ordered List-->
+		<h3>My Favorite Religious Deities</h3>
+		<h4>In order</h4>
+		
+		<ol>
+			<li>The Buddha Guatama</li>
+			<li>Ganish</li>
+			<li>Jesus Christ</li>
+			<li>L Ron Hubbard</li>
+			<li>Tetragrammaton</li>
+			<li>Yo Momma's Pimp</li>
+			<li>Facebook</li>
+		</ol>
+	<p>
+	<p>
+		<h3>My Favorite Porn Sites</h3>
+		<ul>
+		<li><a href="http://www.pornhub.com">pornhub.</a></li>
+		<li><a href="http://wwww.youporn.com">youporn.</a></li>
+		<li><a href="http://www.redtube.com">redtube.</a></li>
+		</ul>
+	</p>
+	<!--Importing Audio-->
+	<p>
+	<h2>My Favorite Song</h2>
+	<audio controls="controls">
+	<source src="SkinOnTheDrum.mp3"type="audio/mpeg">
+	</audio>
+	</p>
+	<p>
+	<!--Building a Table-->
+	<h2>Planetary Bodies</h2>
+	<table border="3">
+	<tr>
+		<th>Name</th>
+		<th>Average Distance From the Sun (AU)</th>
+		<th>Planet Type</th>
+	</tr>
+	<tr>
+		<td>Mercury</td>
+		<td>.387</td>
+		<td rowspan="4">Terrestrial</td>
+	</tr>
+	<tr>
+		<td>Venus</td>
+		<td>.722</td>
+	</tr>
+	<tr>
+		<td>Earth</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Mars</td>
+		<td>1.52</td>
+	</tr>
+	<tr>
+		<td>Jupiter</td>
+		<td>5.2</td>
+		<td rowspan="4">Gas Giant</td>
+	</tr>
+	<tr>
+		<td>Saturn</td>
+		<td>9.58</td>
+	</tr>
+	<tr>
+		<td>Uranus</td>
+		<td>19.2</td>
+	</tr>
+	<tr>
+		<td>Neptune</td>
+		<td>30.1</td>
+	</tr>
+	</table>
+	<p>
+	<!--Uploading Video-->
+	<video src="Chozen1.mp4"
+	controls="controls">
+	</video>
+	</p>
+	<p>
+	
+	<!--Password Input-->
+	<form action="">
+		<fieldset>
+			<legend>Enter your Facebook Password</legend>
+			</p>
+			<p>
+			<label>Type password here</label>
+				<input type="password"
+				id=pwd
+				value="secret"/>
+			</p>
+		</fieldset>
+	</form>
+	<p>
+	<!--Multi Line "Essay Input"-->
+	<form action="">
+	<fieldset>
+	<legend>Quiz</legend>
+	</p><p>
+	<label>Name</label>
+	<input type="text"
+	id="txtName"/>
+	</p>
+	<p>
+	<label>
+	Please tell me of your favorite sexual experience
+	</label>
+	</p>
+	<p>
+	<textarea id="txtAnswer"
+	rows="10"
+	cols="40"></textarea>
+	</p>
+	</fieldset>
+	</form>
+	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

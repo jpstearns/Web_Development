@@ -1,0 +1,13 @@
+/*myStyle.css*/
+body{ background-color: #333300;
+		color: #FFFFFF;}
+h1{ color: #FFFF33;
+	text-align: center;
+	font: italic 200% fantasy;}
+p{ background-color: #FFFF33;
+color: #333300;
+text-align: right;
+border: 3px groove #FFFF33;}
+
+
+	
