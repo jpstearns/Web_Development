@@ -1,0 +1,24 @@
+/*fixedRelative.css*/
+body{background-color: fff9bf;}
+h1{text-align: center;}
+#menu{
+	position: fixed;
+	width:18%;
+	}
+
+#menu li{
+		list-style-type: none;
+		margin-left: -2em;
+		text-align: center;
+		}
+
+.content{
+		position: relative;
+		left: 20%;
+		width: 80%;
+		}
+	
+.content h2{
+			border-top: 3px black double;
+			}
+			

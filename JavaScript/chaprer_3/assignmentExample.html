@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialog Box</title>
+        <style>
+            #white-background{
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                background-color: #fefefe;
+                opacity: 0.7;
+                z-index: 9999;
+            }
+            
+            #dlgbox{
+                /*initially dialog box is hidden*/
+                display: none;
+                position: fixed;
+                width: 480px;
+                z-index: 9999;
+                border-radius: 10px;
+                background-color: #7c7d7e;
+            }
+            
+            #dlg-header{
+               border-top: 1px solid #97f7b5;
+				background: #65d6b0;
+				background: -webkit-gradient(linear, left top, left bottom, from(#409c3e), to(#65d6b0));
+				background: -webkit-linear-gradient(top, #409c3e, #65d6b0);
+				background: -moz-linear-gradient(top, #409c3e, #65d6b0);
+				background: -ms-linear-gradient(top, #409c3e, #65d6b0);
+				background: -o-linear-gradient(top, #409c3e, #65d6b0);
+				padding: 9.5px 19px;
+				-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+				-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+				box-shadow: rgba(0,0,0,1) 0 1px 0;
+				text-shadow: rgba(0,0,0,.4) 0 1px 0;
+				color: white;
+				font-size: 19px;
+				font-family: Georgia, serif;
+				text-decoration: none;
+				vertical-align: middle;
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px 10px 0px 10px;
+            }
+            
+            #dlg-body{
+                background-color: white;
+                color: black;
+				font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+                font-size: 30px;
+				font-weight: bold;
+                padding: 10px;
+                margin: 0px 10px 0px 10px;
+            }
+			
+			#dlg-body img{
+				float: left;
+				clear: left;
+					}
+            
+            #dlg-footer{
+                background-color: #f2f2f2;
+                text-align: right;
+                padding: 10px;
+                margin: 0px 10px 10px 10px;
+            }
+            
+			#dlg-footer button{
+				border-top: 1px solid #97f7b5;
+				background: #65d6b0;
+				background: -webkit-gradient(linear, left top, left bottom, from(#409c3e), to(#65d6b0));
+				background: -webkit-linear-gradient(top, #409c3e, #65d6b0);
+				background: -moz-linear-gradient(top, #409c3e, #65d6b0);
+				background: -ms-linear-gradient(top, #409c3e, #65d6b0);
+				background: -o-linear-gradient(top, #409c3e, #65d6b0);
+				padding: 9.5px 19px;
+				-webkit-border-radius: 14px;
+				-moz-border-radius: 14px;
+				border-radius: 14px;
+				-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+				-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+				box-shadow: rgba(0,0,0,1) 0 1px 0;
+				text-shadow: rgba(0,0,0,.4) 0 1px 0;
+				color: white;
+				font-size: 19px;
+				font-family: Georgia, serif;
+				text-decoration: none;
+				vertical-align: middle;
+				}
+			#dlg-footer button:hover {
+				border-top-color: #3e7828;
+				background: #3e7828;
+				color: #ccc;
+				}			
+			#dlg-footer button:active {
+				border-top-color: #1b5c1d;
+				background: #1b5c1d;
+				}
+        </style>
+    </head>
+    <body>
+        <!-- dialog box -->
+        <div id="white-background">
+        </div>
+        <div id="dlgbox">
+            <div id="dlg-header">Starbucks Coffee App</div>
+            <div id="dlg-body"><img src="index.jpg"></img>Welcome to Starbucks! I'm your starbucks
+								assistant, and I will help you create
+								your weekly Starbucks coffee schedule.</div>
+            <div id="dlg-footer">
+                <button onclick="dlgClose()">OK</button>
+            </div>
+        </div>
+        
+        <!-- rest of the page -->
+        <h1>Dialog Box Demo</h1>
+        <p>This is a dialog box example.</p>
+        <button onclick="showDialog()">Click Me!</button>
+        
+        <!-- script of dialog -->
+        <script>
+            function dlgClose(){
+                var whitebg = document.getElementById("white-background");
+                var dlg = document.getElementById("dlgbox");
+                whitebg.style.display = "none";
+                dlg.style.display = "none";
+            }
+            
+            function showDialog(){
+                var whitebg = document.getElementById("white-background");
+                var dlg = document.getElementById("dlgbox");
+                whitebg.style.display = "block";
+                dlg.style.display = "block";
+                
+                var winWidth = window.innerWidth;
+                var winHeight = window.innerHeight;
+                
+                dlg.style.left = (winWidth/2) - 480/2 + "px";
+                dlg.style.top = "150px";
+            }
+        </script>
+    </body>
+</html>

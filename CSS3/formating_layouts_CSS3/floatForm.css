@@ -7,3 +7,4 @@ label{ clear: left; float: left; width: 5em; text-align: right; margin-right: .5
 input{ background-color: #CCCCFF; float: left;}
 button{ float: left; clear: both; width: 10em; margin-left: 7em; margin-top: 1em; 
 		background-color: #0000CC; color: #FFFFFF;}
+textarea{ clear: left; float: left; margin-left: auto; margin-right:auto;}

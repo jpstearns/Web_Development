@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>prompt.html</title>
+	<script type="text/javascript">
+		//From prompt.html
+		
+		var person= new String;	//Declaring a variable person.
+		var length=0;			//Declaring a variable length.
+		
+		//Prompt User For name input.
+		person = prompt("What is your name");
+		person= person.toUpperCase();
+		
+		//Display back their name.
+		alert("Hey There, "+person+"!");
+		person=person.toLowerCase();
+		
+		//.length will return the length property of the string
+		length = person.length
+		alert("Your name "+person+" is "+length+" characters long");
+		alert("The first three letters of your name are "+person.substring(0,3));
+		alert("Big Gulps Huh? Welp See Ya Later!");
+		
+		var x = new String;
+		var y = new String;
+		
+		//Prompt user for values of x and y.
+		x=prompt("What is the first number you would like to add?");
+		y=prompt("What is the second number you would like to add?");
+		var sum = parseInt(x)+parseInt(y);
+		alert(x+"+"+y+"="+sum);
+	</script>
+</head>
+<body>
+</body>
+</html>

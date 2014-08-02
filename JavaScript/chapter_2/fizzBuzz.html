@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+		<meta charset = "UTF-8">
+		<title>fizzBuzz.html</title>
+		
+		<script type="text/javascript">
+		function fizzBuzz(){
+			
+			var count = 1;
+			var numbers = new Array();
+			
+			for(i = 0; i < 100; i++){
+				
+				numbers[i] = count;
+			
+				if (numbers[i] % 5 == 0 && numbers[i] % 3 == 0){
+					console.log(numbers[i] + " fizzBuzz");
+					}
+				else if (numbers[i] % 5 == 0){
+					console.log(numbers[i] + " fizz");
+					}
+				else if (numbers[i] %3 == 0){
+					console.log(numbers[i] + " buzz");
+					}
+				else {
+					console.log(numbers[i]));
+					}
+				count++;
+			}//end for
+		}//end fizzBuzz()
+		</script>
+</head>
+<body> 
+	<script>
+		fizzBuzz();
+	</script>
+
+</body>
+</html>

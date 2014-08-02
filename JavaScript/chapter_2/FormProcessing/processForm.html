@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>Form Example</title>
+	<link 	rel  = "stylesheet"
+			type = "text/css"
+			href = "Form.css"
+			></link>
+	<script src="processForm.js"></script>
+</head>
+<body>
+	<h1>Text Input Devices</h1>
+	<form action = "">
+		<fieldset>
+			<label>User Name</label>
+			<input type = "text"
+					id = "txtNormal"/>
+			<label>Password </label>
+			<input type = "password"
+					id = "pwd"/>
+			<!--<label>Hidden</label>-->
+			<input type = "hidden"
+					id = "hidden"
+					value = "wouldn't you like to know"/>
+			<textarea id = "txtArea"
+						rows = "10"
+						cols = "40">
+					This page is an example of how one
+					might use javascript to process form 
+					elements
+			</textarea>
+			<button type = "button"
+					onclick = "processForm()">
+				Process
+			</button>
+		</fieldset>
+	</form>
+	<div id = "output"></div>
+</body>
+</html>

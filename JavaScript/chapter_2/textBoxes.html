@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>textBoxes.html</title>
+	<script type = "text/javascript">
+	//From textBoxes.html
+	function sayHi(){
+		var txtName = document.getElementById("txtName");
+		var divOutput = document.getElementById("divOutput");
+		var name = txtName.value;
+			divOutput.innerHTML = "<em>"+name+"</em>";
+			divOutput.innerHTML += " is a very nice name.";
+		}//end sayHi()
+	</script>
+	<link rel = "stylesheet"
+			type = "text/css"
+			href="text boxes.css"/>
+</head>
+<body>
+	<h1>Inner HTML Demo</h1>
+	<form action="">
+	<fieldset>
+		<label>Please type your name: </label>
+		<input type = "text"
+				id = "txtName"/>
+			<button type = "button"
+					onclick = "sayHi()">Click Me</button>
+	</fieldset>
+	</form>
+	
+	<div id = "divOutput">
+		Watch this space.
+	</div>
+</body>
+</html>

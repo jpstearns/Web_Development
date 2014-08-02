@@ -1,0 +1,91 @@
+body{
+		background: url("newYork.jpg") no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+fieldset{ 
+		background-color: #226666; 
+		width: 300px; 
+		margin-right: auto; 
+		margin-left: auto;
+		 border: 2px solid #009;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		-webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+		box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+		box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+		}
+		
+label{ 
+	clear: left; 
+	float: left; 
+	width: 10em; 
+	text-align: right; 
+	margin-right: .5em;
+	color: #5FC2C2;
+	}
+	
+input{ 
+	background-color: white; 
+	float: left;}
+
+textarea{ 
+		clear: left; 
+		float: left; 
+		margin-right:auto; 
+		margin-left:auto;
+		}
+		
+button{ 
+		float: left; 
+		clear: both; 
+		margin-left: 7em; 
+		margin-top: 1em; 
+		
+		background: #3498db;
+		background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+		background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+		background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+		background-image: -o-linear-gradient(top, #3498db, #2980b9);
+		background-image: linear-gradient(to bottom, #3498db, #2980b9);
+		-webkit-border-radius: 28;
+		-moz-border-radius: 28;
+		border-radius: 28px;
+		font-family: Arial;
+		color: #ffffff;
+		font-size: 20px;
+		padding: 10px 20px 10px 20px;
+		text-decoration: none;
+		}
+
+button:hover {
+			background: #3cb0fd;
+			background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+			background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+			text-decoration: none;
+			}
+		
+h1{
+	text-align: center;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-weight: bold;
+	color: #768297;
+  }
+ 
+ dt{
+   border-top: double black 5px;
+   }
+  
+  dl{
+	border-bottom: solid black 5px;
+	}
+#output{ background-color: black;
+		color: white;
+		}
