@@ -1,0 +1,98 @@
+<!--
+*@author:	jpStearns
+*@since:	August 10th, 2014
+*@email:	jstearns@ccri.edu
+*			https://www.gitHub.com/jpStearns
+*
+*	Follow Me on GitHub!*
+
+This statistics calculator will assist teachers in calculating grades
+with several options for dropping scores and delivering pertinant 
+information to the user.-->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>Statistics Calculator</title>
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="statsCalculator.css">
+	</link>
+	<script src="statsCalculator.js"></script>
+</head>
+<body>
+	<h1>Statistics Calculator</h1>
+		<form action="">
+			<fieldset>
+				<legend>Statistics Calculator</legend>
+				<br>
+				<div id="grades">
+				<center>
+				<label>Test Scores:</label>
+					<input type="text"
+							id="textbox0"
+							size="4"/>
+					<input type="text"
+							id="textbox1"
+							size="4"/>
+					<input type="text"
+							id="textbox2"
+							size="4"/>
+					<input type="text"
+							id="textbox3"
+							size="4"/>
+				</center>
+				</div>
+				<br>
+				<fieldset>
+				<legend style="font-size:small;
+					        font-weight: bolder;">Statistics</legend>
+				<div id="checkboxes">
+					<input type="checkbox"
+							id= "chkAvg"
+							value="Average"
+							checked="checked">	
+						<label for = "chkAvg">Average</label>
+						<br>
+					<input type="checkbox"
+							id="chkMax"
+							value="Maximum"/>
+						<label for="chkMax">Maximum</label>
+						<br>
+					<input type="checkbox"
+							id="chkMin"
+							value="Minimum"/>
+						<label for="chkMin">Minimum</label>
+						<br>
+					<input type="checkbox"
+							id="chkLetterGrade"
+							value="letterGrade"></input>
+							<label for="chkLetterGrade">Letter Grade</label>
+							<br>
+					</div>
+					<div id="radButtons">
+					<input type ="radio"
+							name="tests"
+							id="radDrop0"
+							checked="checked"/>
+						<label for=radDrop0>Average</label>
+								<br>
+					<input type="radio"
+							name="tests"
+							id="radDrop1"/>
+						<label for=radDrop1>Drop Lowest Test Grade</label>
+							<br>
+					<input type="radio"
+							name="tests"
+							id="radDrop2"/>
+						<label for=radDrop2>Drop 2 Lowest Test Grades </label>
+					</div>
+					</fieldset>
+					<br>
+					<button type="button"
+							onclick="calculate()">Calculate</button>
+			</fieldset>
+		</form>
+</body>
+</html>
